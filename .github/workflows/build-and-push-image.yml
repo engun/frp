@@ -1,14 +1,7 @@
 name: Build Image and Publish to Dockerhub & GPR
 
 on:
-  release:
-    types: [ published ]
   workflow_dispatch:
-    inputs:
-      tag:
-        description: 'Image tag'
-        required: true
-        default: 'test'
 permissions:
   contents: read
 
